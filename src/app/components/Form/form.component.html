@@ -1,0 +1,37 @@
+<form
+  class="bg-white bg-opacity-70 rounded-lg text-black w-[500px] m-auto flex flex-col items-center p-8"
+>
+  <div class="mb-2">
+    <div class="flex flex-col mt-4">
+      <label class="text-xl mb-2" for="name">Name</label>
+      <input
+        class="bg-zinc-300 outline-transparent rounded-md p-2"
+        id="name"
+        type="text"
+      />
+    </div>
+    <div class="flex flex-col mt-4">
+      <label class="text-xl mb-2" for="email">Email</label>
+      <input
+        class="bg-zinc-300 outline-transparent rounded-md p-2"
+        id="email"
+        type="text"
+      />
+    </div>
+    <div class="flex flex-col mt-4">
+      <label class="text-xl mb-2" for="phoneNumber">Phone</label>
+      <input
+        class="bg-zinc-300 outline-transparent rounded-md p-2"
+        id="phoneNumber"
+        type="text"
+      />
+    </div>
+  </div>
+  <button
+    class="mt-4 bg-slate-950 px-10 py-2 text-white uppercase rounded-lg hover:bg-slate-600"
+    type="submit"
+    (click)="onSubmit()"
+  >
+    Submit
+  </button>
+</form>
